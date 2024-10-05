@@ -1,0 +1,112 @@
+# Node.js related files
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Logs
+logs/
+*.log
+logs/*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# dotenv environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Testing
+/coverage
+.nyc_output
+/.vscode-test
+
+# Binaries
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Production build
+/build
+/dist
+
+# Cache and output files
+/tmp
+/out
+/pids
+*.pid
+*.seed
+*.pid.lock
+.cache/
+
+# IDE and editor related files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Git files
+.git
+.gitconfig
+
+# MacOS specific
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows specific
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux specific
+*~
+.nfs*
+
+# Optional npm cache directory
+.npm
+
+# Optional yarn cache directory
+.yarn/cache
+.pnp.*
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# Parcel-bundler cache (for frontend projects)
+.cache/
+
+# Storybook files (if using Storybook)
+.storybook/
+
+# Svelte related (if using Svelte)
+__sapper__/
+.svelte-kit/
+
+# VS Code settings
+.vscode/
+
+# JetBrains related files (if using WebStorm/IntelliJ)
+.idea/
+
+# Generated files for packaging and distributions
+*.tgz
+*.tar.gz
+*.zip
+*.rar
