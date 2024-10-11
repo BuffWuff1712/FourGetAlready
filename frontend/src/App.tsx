@@ -1,17 +1,21 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import HomePage from './components/course_page/HomePage';
-import Dashboard from './components/dashboard/Dashboard';
+// src/App.tsx
+import React, { useState } from 'react';
 import './App.css';
+import Sidebar from './components/course_page/justin/Sidebar';
+import CourseDetails from './components/course_page/justin/CourseDetails';
 
 const App: React.FC = () => {
+  const [selectedContent, setSelectedContent] = useState<string>('overview'); // Default content
+
+  const handleSelect = (content: string) => {
+    setSelectedContent(content); // Update the content based on sidebar button click
+  };
+
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-      </Routes>
-    </Router>
+    <div className="app">
+      <Sidebar onSelect={handleSelect} />
+      <CourseDetails content={selectedContent} />
+    </div>
   );
 };
 

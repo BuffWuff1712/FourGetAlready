@@ -1,51 +1,84 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+/* src/App.css */
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-h1, h2 {
-  text-align: center;
+html, body, #root {
+  height: 100%;
+  background-color: #eaeaea; /* Light gray background for contrast */
 }
 
-.container {
-  max-width: 600px;
-  margin: 0 auto;
+.app {
+  display: flex;
+  font-family: Arial, sans-serif;
+  height: 100vh; /* Set full height */
+}
+
+.sidebar {
+  width: 250px; /* Set a fixed width for the sidebar */
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white; /* Text color */
   padding: 20px;
-  background-color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  border-right: 1px solid #ccc;
+  flex-shrink: 0; /* Prevent sidebar from shrinking */
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Center children vertically */
+  align-items: center; /* Center children horizontally */
 }
 
-button {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  background-color: #007BFF;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
+.sidebar h2 {
+  margin-bottom: 20px; /* Add space below the heading */
 }
 
-button:hover {
-  background-color: #0056b3;
+.sidebar button {
+  margin: 10px 0; /* Add vertical space between buttons */
+  padding: 10px 15px; /* Add some padding for buttons */
+  background-color: #0056b3; /* Darker shade for buttons */
+  color: white; /* Button text color */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners for buttons */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
 }
 
-label {
-  margin-top: 10px;
-  display: block;
-  font-weight: bold;
+.sidebar button:hover {
+  background-color: #004494; /* Change button color on hover */
 }
 
-textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  resize: vertical;
+.course-details {
+  padding: 20px;
+  flex-grow: 1; /* Allow the course details to grow */
+  background-color: white; /* White background for course details */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  overflow-y: auto; /* Allow scrolling if content is too long */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+}
+
+h1, h2 {
+  color: #333; /* Dark text color */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px; /* Adjust sidebar width */
+  }
+}
+
+@media (max-width: 600px) {
+  .app {
+    flex-direction: column; /* Stack components vertically on small screens */
+  }
+
+  .sidebar {
+    width: 100%; /* Full width for sidebar */
+    border-right: none; /* Remove border on small screens */
+    border-bottom: 1px solid #ccc; /* Add bottom border for separation */
+  }
 }
