@@ -49,3 +49,66 @@ textarea {
   border-radius: 5px;
   resize: vertical;
 }
+
+.app {
+  display: flex;
+}
+
+.sidebar {
+  width: 20%;
+  background-color: #fff;
+  padding: 20px;
+  height: 100vh;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 20px 0;
+}
+
+.dashboard {
+  width: 80%;
+  padding: 20px;
+}
+
+.placards {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.placard {
+  width: 45%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.student-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.student-list th, .student-list td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.student-list th {
+  background-color: #f2f2f2;
+}
+
+.graytab {
+  background-color: #e0e0e0;
+  height: 30px;
+  width: 70%;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
