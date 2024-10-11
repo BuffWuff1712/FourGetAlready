@@ -1,4 +1,3 @@
-// src/App.tsx
 import React, { useState } from 'react';
 import './App.css';
 import Sidebar from './components/course_page/justin/Sidebar';
@@ -15,6 +14,7 @@ const App: React.FC = () => {
     <div className="app">
       <Sidebar onSelect={handleSelect} />
       <CourseDetails content={selectedContent} />
+      <button className="main-menu-button">Main Menu</button>
     </div>
   );
 };
