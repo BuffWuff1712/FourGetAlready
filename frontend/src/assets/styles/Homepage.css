@@ -2,4 +2,21 @@
     display: flex;
     font-family: Arial, sans-serif;
     height: 100vh; /* Set full height */
-  }
+}
+
+.profile-button {
+  position: absolute; /* Position the button absolutely */
+  top: 20px; /* Adjust the top position */
+  right: 20px; /* Adjust the right position */
+  background-color: #2980b9; /* Button background color */
+  color: white; /* Text color */
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Rounded corners */
+  padding: 10px 15px; /* Padding for the button */
+  text-decoration: none; /* Remove underline */
+  font-size: 1rem; /* Font size */
+}
+
+.profile-button:hover {
+  background-color: #1f639b; /* Darker button on hover */
+}

@@ -1,0 +1,68 @@
+.user-profile-form {
+    width: 100%; /* Ensure the form takes full width of the parent */
+    max-width: 600px; /* Optional but good to limit maximum size for readability */
+    margin: 20px auto; /* Centered with some margin at the top and bottom */
+    padding: 20px; /* Padding inside the form */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fefefe;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px; /* Space between form groups */
+}
+
+label {
+    display: block; /* Block-level for labels for better alignment */
+    margin-bottom: 5px; /* Space below labels */
+}
+
+input[type="text"],
+textarea {
+    width: 100%; /* Full width for input and textarea */
+    padding: 10px; /* Inner spacing */
+    border: 1px solid #ccc; /* Border styling */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and border in the element's total width/height */
+}
+
+button, .back-button {
+    padding: 10px 15px; /* Padding for buttons */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #2980b9; /* Button background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1rem; /* Font size */
+    transition: background-color 0.3s; /* Transition for hover effects */
+    width: 100%; /* Full width for both buttons */
+    margin-top: 10px; /* Space above the button */
+}
+
+button:hover, .back-button:hover {
+    background-color: #1f639b; /* Darker on hover */
+}
+
+/* Add this CSS to UserProfileForm.css */
+
+.user-profile-container {
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+.user-profile-form {
+    width: 100%; /* Ensure the form takes full width of the parent */
+    max-width: 600px; /* Limit maximum size for readability */
+    margin: 20px; /* Margin for spacing around the form */
+    padding: 20px; /* Padding inside the form */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fefefe;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Other existing styles remain unchanged */
+
