@@ -1,7 +1,8 @@
+// src/components/Sidebar.tsx
 import React from 'react';
 
 interface SidebarProps {
-  onSelect: (content: string) => void;
+  onSelect: (content: string) => void; // Function to change content in the main area
 }
 
 const Sidebar: React.FC<SidebarProps> = ({ onSelect }) => {
