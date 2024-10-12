@@ -1,34 +1,45 @@
-.user-profile-form {
+/* Add this CSS to UserProfileForm.css */
+
+.user-profile-container {
     width: 100%; /* Ensure the form takes full width of the parent */
-    max-width: 600px; /* Optional but good to limit maximum size for readability */
-    margin: 20px auto; /* Centered with some margin at the top and bottom */
-    padding: 20px; /* Padding inside the form */
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+.user-profile-form {
+    max-width: 1200px; /* Increase maximum width for readability */
+    width: 100%; /* Ensure the form takes the full width of the container */
+    margin: 20px; /* Margin for spacing around the form */
+    padding: 30px; /* Increased padding inside the form for spacing */
     border: 1px solid #ccc;
     border-radius: 8px;
     background-color: #fefefe;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15); /* Slightly more intense shadow */
 }
 
+/* Other existing styles */
 .form-group {
-    margin-bottom: 15px; /* Space between form groups */
+    margin-bottom: 20px; /* Increased space between form groups */
 }
 
 label {
     display: block; /* Block-level for labels for better alignment */
-    margin-bottom: 5px; /* Space below labels */
+    margin-bottom: 8px; /* More space below labels */
 }
 
 input[type="text"],
 textarea {
     width: 100%; /* Full width for input and textarea */
-    padding: 10px; /* Inner spacing */
+    padding: 12px; /* Increased inner spacing */
     border: 1px solid #ccc; /* Border styling */
     border-radius: 4px; /* Rounded corners */
     box-sizing: border-box; /* Include padding and border in the element's total width/height */
 }
 
 button, .back-button {
-    padding: 10px 15px; /* Padding for buttons */
+    padding: 12px 15px; /* Increased padding for buttons */
     border: none; /* No border */
     border-radius: 4px; /* Rounded corners */
     background-color: #2980b9; /* Button background color */
@@ -43,26 +54,3 @@ button, .back-button {
 button:hover, .back-button:hover {
     background-color: #1f639b; /* Darker on hover */
 }
-
-/* Add this CSS to UserProfileForm.css */
-
-.user-profile-container {
-    display: flex; /* Enable flexbox */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 100vh; /* Full viewport height */
-}
-
-.user-profile-form {
-    width: 100%; /* Ensure the form takes full width of the parent */
-    max-width: 600px; /* Limit maximum size for readability */
-    margin: 20px; /* Margin for spacing around the form */
-    padding: 20px; /* Padding inside the form */
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #fefefe;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Other existing styles remain unchanged */
-
