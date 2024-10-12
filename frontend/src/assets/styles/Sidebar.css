@@ -1,0 +1,23 @@
+.sidebar {
+    width: 20%; /* Fixed width for the sidebar */
+    background-color: #ffffff; /* Sidebar background color */
+    color: white; /* Text color */
+    border-right: 1px solid #ccc;
+    display: flex; /* Flexbox for alignment */
+    flex-direction: column; /* Ensure items are stacked vertically */
+    align-items: stretch; /* Ensure full width of sidebar */
+    padding-top: 10px; /* Optional: some padding to the top */
+  }
+  
+  .sidebar ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    flex-grow: 1; /* Allow the list to grow and fill the available space */
+  }
+  
+  .sidebar li {
+    margin-bottom: 10px; /* Add spacing between each tab */
+  }
+  
+  

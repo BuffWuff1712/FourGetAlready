@@ -1,0 +1,58 @@
+.placard {
+    width: 100%;
+    margin-inline: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .placard-header {
+    background-color: #2d4b4e; /* Dark greenish background for the header */
+    height: 100px;
+    position: relative;
+  }
+  
+  .dots-menu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .dot {
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 3px 0;
+  }
+  
+  .placard-content {
+    padding: 10px;
+  }
+  
+  .course-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    padding-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .course-code {
+    font-size: 14px;
+    color: #007bff; /* Blue color for the course code */
+    margin: 0;
+  }
+  
+  .course-category {
+    font-size: 12px;
+    color: #999;
+    margin-top: 5px;
+  }
+  

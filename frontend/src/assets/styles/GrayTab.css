@@ -1,0 +1,8 @@
+.graytab {
+  background-color: #b9b9b9;
+  height: 50px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
