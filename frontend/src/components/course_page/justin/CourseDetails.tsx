@@ -1,13 +1,10 @@
 import React from 'react';
 
-// Define the interface for component props
 interface CourseDetailsProps {
   content: string;
 }
 
-// Define the CourseDetails component
 const CourseDetails: React.FC<CourseDetailsProps> = ({ content }) => {
-  // Define course details object
   const courseDetails = {
     overview: {
       title: "Introduction to TypeScript",
