@@ -1,4 +1,12 @@
 .dashboard {
-    width: 100%;
-    padding: 20px;
-  }
+  width: 70%;
+  padding: 20px;
+}
+
+.placards {
+  display: flex;              /* Enables Flexbox layout */
+  flex-direction: row;         /* Aligns items in a row (default) */
+  justify-content: space-between; /* Distributes space between the items */
+  flex-wrap: wrap;           /* Ensures all items stay on one line */
+  gap: 10px;                   /* Adds some spacing between the items */
+}

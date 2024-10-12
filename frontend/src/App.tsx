@@ -10,17 +10,6 @@ const App: React.FC = () => {
     <div className="app">
           <Router>
             <div className="main-content">
-              {/* Long text box for the prompt */}
-              <input
-                type="text"
-                placeholder="Get started with your learning"
-                style={{
-                  width: '100%',
-                  padding: '10px',
-                  fontSize: '16px',
-                  marginBottom: '20px'
-                }}
-              />
               <Routes>
                 {/* Route for the Dashboard, which contains the Placards */}
                 <Route path="/" element={<Homepage />} />

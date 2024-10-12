@@ -1,0 +1,53 @@
+.maincard {
+  background: linear-gradient(135deg, #59eeff, #429198); /* Define the gradient here */
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 15px;
+  height: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.maincard-title {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 15px 0;
+  color: #fff;
+  line-height: 1.3;
+}
+
+.maincard-description {
+  font-size: 1.1rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.maincard-extra {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.maincard-button {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 15px 40px;
+  background-color: #54ec82;
+  color: #000;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.maincard-button:hover {
+  background-color: #0056b3;
+}

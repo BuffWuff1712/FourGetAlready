@@ -1,58 +1,80 @@
+/* Container for the entire placard */
 .placard {
-    width: 100%;
-    margin-inline: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: white;
-    overflow: hidden;
-    font-family: 'Arial', sans-serif;
-    }
-  
-  .placard-header {
-    background-color: #2d4b4e; /* Dark greenish background for the header */
-    height: 100px;
-    position: relative;
-  }
-  
-  .dots-menu {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-  }
-  
-  .dot {
-    display: block;
-    width: 6px;
-    height: 6px;
-    background-color: white;
-    border-radius: 50%;
-    margin: 3px 0;
-  }
-  
-  .placard-content {
-    padding: 10px;
-  }
-  
-  .course-title {
-    font-size: 16px;
-    font-weight: bold;
-    color: #333;
-    margin: 0;
-    padding-bottom: 5px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  
-  .course-code {
-    font-size: 14px;
-    color: #007bff; /* Blue color for the course code */
-    margin: 0;
-  }
-  
-  .course-category {
-    font-size: 12px;
-    color: #999;
-    margin-top: 5px;
-  }
-  
+  width: 53%;                      /* Percentage-based width */
+  max-width: 300px;                 /* Maximum width for smaller screens */
+  margin-inline: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  overflow: hidden;
+  padding: 16px;                    /* Padding inside the placard */
+  font-family: 'Arial', sans-serif; /* Font styling */
+  cursor: pointer;                  /* Cursor indicates clickable area */
+  transition: transform 0.2s ease-in-out; /* Hover effect transition */
+}
+
+.placard:hover {
+  transform: translateY(-5px);      /* Adds a small lift effect on hover */
+}
+
+/* Header section with background color and sizing */
+.placard-header {
+  background-color: #2d4b4e;        /* Dark greenish background for the header */
+  height: 150px;                    /* Unified height for consistency */
+  border-radius: 8px 8px 0 0;       /* Rounded corners for the header */
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Content inside the placard */
+.placard-content {
+  padding: 6px;                     /* Padding inside the content area */
+  color: #333;                      /* Default text color */
+}
+
+
+/* Dots menu, for example, placed in the top-left corner */
+.dots-menu {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  display: flex;
+  gap: 4px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+/* Main content of the placard */
+.placard-content {
+  padding: 10px 0;
+}
+
+/* Title of the placard */
+.placard-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #333; /* Default text color */
+}
+
+/* Course code */
+.placard-code {
+  font-size: 1.2rem;
+  margin: 5px 0;
+  color: #007bff; /* Default course code color */
+}
+
+/* Category or description */
+.placard-category {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+}
