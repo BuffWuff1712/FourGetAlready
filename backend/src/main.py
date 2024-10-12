@@ -2,6 +2,7 @@ import re
 import openai
 import os
 from dotenv import load_dotenv
+from flask import Flask, request, jsonify, make_response
 
 # Load environment variables from .env file
 load_dotenv()
@@ -9,21 +10,23 @@ load_dotenv()
 # Get the OpenAI API key from the environment
 openai.api_key = os.environ.get("OPENAI_API_KEY")
 
+app = Flask(__name__)
+
+# Sample employee data (can be replaced by request data)
 employee_data = {
-                    "skills": ["Python", "Javascript", "Data Analysis"],
-                    "career_goals": "Senior Developer Executive",
-                    "preferences": "Project-based",
-                    "current_role": "Software Developer"
-                }
+    "skills": ["Python", "Javascript", "Data Analysis"],
+    "career_goals": "Senior Developer Executive",
+    "preferences": "Project-based",
+    "current_role": "Software Developer"
+}
+
 
 def get_learning_recommendation(employee_data):
-    # Extract information from the employee data
     skills = employee_data.get('skills', [])
     career_goals = employee_data.get('career_goals', '')
     preferences = employee_data.get('preferences', '')
     current_role = employee_data.get('current_role', '')
 
-    # Prepare the messages for OpenAI's chat API
     messages = [
         {
             "role": "system",
@@ -41,17 +44,16 @@ def get_learning_recommendation(employee_data):
         }
     ]
 
-    # Use OpenAI's Chat API to get learning path recommendations
-    response = openai.chat.completions.create(
-        model="ft:gpt-4o-mini-2024-07-18:personal:fourgetalready:AHAU3v36",  # Replace with your fine-tuned model if needed
+    response = openai.ChatCompletion.create(
+        model="ft:gpt-4o-mini-2024-07-18:personal:fourgetalready:AHAU3v36",  # Use your own model here
         messages=messages,
         max_tokens=150,
         temperature=0.7
     )
 
-    # Extract the recommendation from the API response
-    recommendation = response.choices[0].message.content
+    recommendation = response['choices'][0]['message']['content']
     return recommendation
+
 
 def parse_recommendation(recommendation):
     result = {"careers": [], "courses": []}
@@ -68,12 +70,15 @@ def parse_recommendation(recommendation):
 
     return result
 
-def recommend(employee_data):
+
+@app.route('/recommend', methods=['POST'])
+def recommend():
+    data = request.json  # Receive user input from React frontend
+    recommendations = get_learning_recommendation(data)  # Get recommendations
+    parsed_recommendations = parse_recommendation(recommendations)  # Parse response
     
-    recommendations = get_learning_recommendation(employee_data)
-    
-    return parse_recommendation(recommendations)
+    return jsonify(parsed_recommendations)  # Return as JSON
 
 
-# Print the output of the recommend function for testing purposes
-print(recommend(employee_data))
+if __name__ == '__main__':
+    app.run(debug=True)

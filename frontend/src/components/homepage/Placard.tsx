@@ -26,7 +26,7 @@ const Placard: React.FC<PlacardProps> = ({
 
   const handleSelect = () => {
     // Navigate to the desired course details page when the placard is clicked
-    navigate('/Coursepage');;
+    navigate('/coursepage');;
   }
 
   return (
