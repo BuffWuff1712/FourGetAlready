@@ -4,6 +4,7 @@ import Placard from './Placard';
 import DescriptionContainer from './DescriptionContainer';
 import '../../assets/styles/Dashboard.css'
 import MainCard from './MainCard';
+import LearningInput from '../LearningInput';
 
 interface Course {
   title: string;
@@ -20,6 +21,7 @@ const Dashboard: React.FC = () => {
 
   return (
     <div className="dashboard">
+      <LearningInput />
       <MainCard 
         title='Explore Your Potential at PSA' 
         description='Unlock a journey to discover how you can thrive at PSA with tailored insights powered by AI.' 
