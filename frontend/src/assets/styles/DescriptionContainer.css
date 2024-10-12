@@ -1,5 +1,5 @@
 .placard {
-    width: 93%;
+    width: 53%;
     margin-inline: 30px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -12,20 +12,20 @@
   
   .placard-header {
     background-color: #2d4b4e; /* Dark greenish background for the header */
-    height: 100px;
+    height: 70px;
     position: relative;
   }
   
   .placard-content {
-    padding: 10px;
+    padding: 6px;
   }
   
   .course-title {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     color: #333;
     margin: 0;
-    padding-bottom: 5px;
+    padding-bottom: 2px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -38,8 +38,8 @@
   }
   
   .course-category {
-    font-size: 12px;
+    font-size: 10px;
     color: #999;
-    margin-top: 5px;
+    margin-top: 2px;
   }
   
