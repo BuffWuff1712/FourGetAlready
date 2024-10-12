@@ -1,17 +1,18 @@
-// src/components/CourseDetails.tsx
 import React from 'react';
 import '../../assets/styles/CourseDetails.css'
 
+// Define the interface for component props
 interface CourseDetailsProps {
-  content: string; // New prop to determine what content to display
+  content: string;
 }
 
+// Define the CourseDetails component
 const CourseDetails: React.FC<CourseDetailsProps> = ({ content }) => {
+  // Define course details object
   const courseDetails = {
     overview: {
       title: "Introduction to TypeScript",
-      description: "This course covers the fundamentals of TypeScript, a typed superset of JavaScript that compiles to plain JavaScript." +
-      " You will learn about its features, best practices, and how to integrate it into your workflow.",
+      description: "This course covers the fundamentals of TypeScript, a typed superset of JavaScript that compiles to plain JavaScript. You will learn about its features, best practices, and how to integrate it into your workflow.",
       instructor: "John Doe",
       duration: "4 weeks"
     },
