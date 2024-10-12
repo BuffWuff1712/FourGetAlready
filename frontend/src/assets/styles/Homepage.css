@@ -1,0 +1,5 @@
+.homepage {
+    display: flex;
+    font-family: Arial, sans-serif;
+    height: 100vh; /* Set full height */
+  }
