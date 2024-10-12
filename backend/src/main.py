@@ -3,6 +3,7 @@ import openai
 import os
 from dotenv import load_dotenv
 from flask import Flask, request, jsonify, make_response
+from flask_cors import CORS
 
 # Load environment variables from .env file
 load_dotenv()
@@ -11,6 +12,7 @@ load_dotenv()
 openai.api_key = os.environ.get("OPENAI_API_KEY")
 
 app = Flask(__name__)
+CORS(app)
 
 # Sample employee data (can be replaced by request data)
 employee_data = {
@@ -44,14 +46,16 @@ def get_learning_recommendation(employee_data):
         }
     ]
 
-    response = openai.ChatCompletion.create(
+    response = openai.chat.completions.create(
         model="ft:gpt-4o-mini-2024-07-18:personal:fourgetalready:AHAU3v36",  # Use your own model here
         messages=messages,
         max_tokens=150,
         temperature=0.7
     )
 
-    recommendation = response['choices'][0]['message']['content']
+    
+    recommendation = response.choices[0].message.content
+    print(recommendation)
     return recommendation
 
 

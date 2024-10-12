@@ -1,0 +1,65 @@
+.career-progression {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .step {
+    position: relative;
+    background-color: #4CAF50; /* Default color */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 200px;
+    height: 15 0px; /* Set a fixed height for consistency */
+    clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .step .content {
+    opacity: 0.9;
+  }
+  
+  .step:hover {
+    transform: translateY(-10px); /* Slight lift on hover */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Elevated shadow */
+  }
+  
+  .step.active {
+    background-color: #1e7e34; /* Highlighted color for active step */
+  }
+  
+  .step h3 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  
+  .step p {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    padding: 0 5px;
+  }
+  
+  .step:last-child {
+    margin-right: 0;
+  }
+  
+  /* Define different colors for each step */
+
+  .step:nth-child(1) {
+    background-color: #ffc107d0; /* Yellow for step 3 */
+  }
+  .step:nth-child(2) {
+    background-color: #28a745; /* Green for step 2 */
+  }
+  .step:nth-child(3) {
+    background-color: #007bff; /* Blue for step 1 */
+  }
+  
