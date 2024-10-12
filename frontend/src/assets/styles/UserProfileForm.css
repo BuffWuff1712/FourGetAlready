@@ -1,0 +1,56 @@
+/* Add this CSS to UserProfileForm.css */
+
+.user-profile-container {
+    width: 100%; /* Ensure the form takes full width of the parent */
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+.user-profile-form {
+    max-width: 1200px; /* Increase maximum width for readability */
+    width: 100%; /* Ensure the form takes the full width of the container */
+    margin: 20px; /* Margin for spacing around the form */
+    padding: 30px; /* Increased padding inside the form for spacing */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fefefe;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15); /* Slightly more intense shadow */
+}
+
+/* Other existing styles */
+.form-group {
+    margin-bottom: 20px; /* Increased space between form groups */
+}
+
+label {
+    display: block; /* Block-level for labels for better alignment */
+    margin-bottom: 8px; /* More space below labels */
+}
+
+input[type="text"],
+textarea {
+    width: 100%; /* Full width for input and textarea */
+    padding: 12px; /* Increased inner spacing */
+    border: 1px solid #ccc; /* Border styling */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and border in the element's total width/height */
+}
+
+button, .back-button {
+    padding: 12px 15px; /* Increased padding for buttons */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #2980b9; /* Button background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1rem; /* Font size */
+    transition: background-color 0.3s; /* Transition for hover effects */
+    width: 100%; /* Full width for both buttons */
+    margin-top: 10px; /* Space above the button */
+}
+
+button:hover, .back-button:hover {
+    background-color: #1f639b; /* Darker on hover */
+}
