@@ -3,6 +3,7 @@ import React from 'react';
 import Placard from './Placard';
 import DescriptionContainer from './DescriptionContainer';
 import '../../assets/styles/Dashboard.css'
+import MainCard from './MainCard';
 
 interface Course {
   title: string;
@@ -19,13 +20,11 @@ const Dashboard: React.FC = () => {
 
   return (
     <div className="dashboard">
+      <MainCard 
+        title='Explore Your Potential at PSA' 
+        description='Unlock a journey to discover how you can thrive at PSA with tailored insights powered by AI.' 
+      />
       <h3>Recommended Courses</h3>
-      <div className="placards">
-        <Placard title="Software Engineering" courseCode='CS2103' category='Software' backgroundColor="#FF5733"/>
-        <Placard title="Data Analysis with R" courseCode='DSA1010' category='Data Analysis'/>
-        <Placard title="Software Engineering" courseCode='CS2103' category='Software' backgroundColor="#FF5733"/>
-        <Placard title="Data Analysis with R" courseCode='DSA1010' category='Data Analysis'/>
-      </div>
       <div className="placards">
         <Placard title="CSS Full Course 2025" courseCode='CS1010' category='Software' backgroundColor="#FF5733"/>
         <Placard title="Python Full Course 2025" courseCode='PY1010' category='Software'/>
@@ -35,13 +34,9 @@ const Dashboard: React.FC = () => {
 
       <div className="student-list">
         <h3>Ongoing courses</h3>
-        <table>
-          <tbody>
-            {ongoingCourses.map((course, index) => (
-              <DescriptionContainer title={course.title} courseCode={course.code} category='nil'/>
-            ))}
-          </tbody>
-        </table>
+          {ongoingCourses.map((course, index) => (
+            <DescriptionContainer title={course.title} courseCode={course.code} category='nil'/>
+          ))}
       </div>
     </div>
   );

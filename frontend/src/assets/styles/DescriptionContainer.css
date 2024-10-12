@@ -1,5 +1,5 @@
-.placard {
-    width: 53%;
+.desc_container {
+    width: 95%;
     margin-inline: 30px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -9,37 +9,17 @@
     overflow: hidden;
     font-family: 'Arial', sans-serif;
   }
+
+.desc_container-content {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
   
-  .placard-header {
-    background-color: #2d4b4e; /* Dark greenish background for the header */
-    height: 70px;
-    position: relative;
-  }
-  
-  .placard-content {
-    padding: 6px;
-  }
-  
-  .course-title {
-    font-size: 14px;
-    font-weight: bold;
-    color: #333;
-    margin: 0;
-    padding-bottom: 2px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  
-  .course-code {
-    font-size: 14px;
-    color: #007bff; /* Blue color for the course code */
-    margin: 0;
-  }
-  
-  .course-category {
-    font-size: 10px;
-    color: #999;
-    margin-top: 2px;
-  }
-  
+.desc_container-title {
+  margin: 5px;
+}
+
+.desc_container-code {
+  margin: 5px;
+}

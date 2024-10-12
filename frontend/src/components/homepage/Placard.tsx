@@ -18,7 +18,7 @@ const Placard: React.FC<PlacardProps> = ({
   courseCode, 
   category, 
   backgroundColor = '#2d4b4e', // Default background colour
-  textColor = '#333',          // Default text colour
+  textColor = '#000',          // Default text colour
   courseCodeColor = '#007bff'  // Default course code colour
 }) => {
 
@@ -39,9 +39,9 @@ const Placard: React.FC<PlacardProps> = ({
           </div>
         </div>
         <div className="placard-content" style={{ color: textColor }}>
-          <h3 className="course-title">{title}</h3>
-          <h4 className="course-code" style={{ color: courseCodeColor }}>{courseCode}</h4>
-          <p className="course-category">{category}</p>
+          <h3 className="placard-title">{title}</h3>
+          <h4 className="placard-code" style={{ color: courseCodeColor }}>{courseCode}</h4>
+          <p className="placard-category">{category}</p>
         </div>
       </div>
   );

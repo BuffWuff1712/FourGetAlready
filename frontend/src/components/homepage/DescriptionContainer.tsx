@@ -19,10 +19,10 @@ const DescriptionContainer: React.FC<DescriptionContainerProps> = ({
   courseCodeColor = '#007bff'  // Default course code colour
 }) => {
   return (
-    <div className="placard">
-      <div className="placard-content" style={{ color: textColor }}>
-        <h3 className="course-title">{title}</h3>
-        <h4 className="course-code" style={{ color: courseCodeColor }}>{courseCode}</h4>
+    <div className="desc_container">
+      <div className="desc_container-content" style={{ color: textColor }}>
+        <h3 className="desc_container-title">{title}</h3>
+        <h4 className="desc_container-code" style={{ color: courseCodeColor }}>{courseCode}</h4>
       </div>
     </div>
   );
