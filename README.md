@@ -22,7 +22,7 @@ This AI-powered Learning Management System (LMS) is designed to provide **person
 - Justin Jiang Wei Ren
 - Kenji Brannon Chong
 - Brandon Ho Jun Jie
-- 
+  
 ## Tech Stack
 
 - **Frontend**: React
