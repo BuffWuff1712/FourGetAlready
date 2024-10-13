@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../assets/styles/sidebar.css'
 
 interface SidebarProps {
   onSelect: (content: string) => void;

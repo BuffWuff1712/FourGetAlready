@@ -11,4 +11,8 @@ html, body, #root {
   height: 100vh; /* Set full height */
 }
 
+.main-content {
+  width: 100%;
+}
+
 
