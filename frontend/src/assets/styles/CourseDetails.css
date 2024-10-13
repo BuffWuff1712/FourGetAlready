@@ -1,6 +1,6 @@
-.sidebar, .course-details {
+.course-details {
    display: flex; /* Enables flexbox layout */
-   height: 100vh;
+   height:93%;
  }
 
  .course-details {
@@ -20,7 +20,7 @@
    padding: 20px;
    border-radius: 8px;
    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
-   margin-bottom: 20px;
+   margin-bottom: 10px;
  }
 
  .course-title {
@@ -44,8 +44,8 @@
  }
 
  .main-menu-button {
-   position: fixed;
-   top: 75px;
+   position:absolute;
+   top: 15px;
    right: 75px;
    background-color: #27ae60;
    color: white;
