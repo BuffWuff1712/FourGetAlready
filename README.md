@@ -16,11 +16,25 @@ This AI-powered Learning Management System (LMS) is designed to provide **person
 
 - **Future Aspiration Support**: Customised recommendations and learning pathways to help employees reach their career goals.
 
+## Team Members👥
+
+- Low Bing Heng
+- Justin Jiang Wei Ren
+- Kenji Brannon Chong
+- Brandon Ho Jun Jie
+- 
+## Tech Stack
+
+- **Frontend**: React
+- **Backend**: Python
+- **AI Integration**: OpenAI API
+- **Database**: 
+
 ## How It Works
 
 1. **Data Input**: Employees input details such as their current role, future career goals, and existing skill sets.
    
-2. **AI Analysis**: The AI-powered system analyses the input data and cross-references it with industry requirements and trends.
+2. **AI Analysis**: The AI-powered system analyses the input data and cross-references it with industry requirements and trends using the OpenAI API.
 
 3. **Pathway Generation**: Personalised learning pathways are created, recommending courses that will help bridge any identified skill gaps.
 
